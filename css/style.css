@@ -1,0 +1,50 @@
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: white url('../img/fundo.png') repeat-x;
+    margin: 0;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+#header {
+    height: 180px;
+    background: url('../img/detalhe-topo.png') no-repeat right;
+    border: 1px solid red;
+}
+
+#header-logo {
+    margin-top: 30px;
+}
+
+#header-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#header-navbar ul li {
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 13px 21px;
+    display: inline-block;
+    background: #B10333;
+}
+
+#header-navbar ul li:not(:first-child) {
+   margin-left: -5px;
+   background-image: url('../img/divisor.png');
+   background-repeat: no-repeat;
+   background-position: left center;
+}
+
+#header-navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#header-navbar .selected-page {
+    background-color: #DE003E;
+}
