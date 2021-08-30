@@ -1,3 +1,4 @@
+/* Geral */
 body {
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     background: white url('../img/fundo.png') repeat-x;
@@ -13,7 +14,6 @@ body {
 #header {
     height: 180px;
     background: url('../img/detalhe-topo.png') no-repeat right;
-    border: 1px solid red;
 }
 
 #header-logo {
@@ -47,4 +47,57 @@ body {
 
 #header-navbar .selected-page {
     background-color: #DE003E;
+}
+
+/* Área de notícias */
+#main {
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.main-box {
+    padding: 5px;
+    background: url('../img/fundo-caixa.png');
+}
+
+.main-box h3 {
+    margin: 0;
+    padding: 5px;
+    color: white;
+    background: #294C71;
+}
+
+.main-box div {
+    margin-top: 5px;
+    padding: 5px;
+    background: white;
+}
+
+/* Barra lateral esquerda */
+#left-sidebar {
+    width: 170px;
+    font-size: 0.9em;
+}
+
+.interviews ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.interviews li {
+    padding: 8px 5px;
+    border-bottom: 0.5px solid #E8E8E8;
+}
+
+.interviews a, .interviews a:link, .interviews a:visited {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.interviews a:hover {
+    color: #A9A9A9;
+    padding-left: 20px;
+    background: url('../img/marcador.png') no-repeat left center;
 }
