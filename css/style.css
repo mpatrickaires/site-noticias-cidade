@@ -10,6 +10,14 @@ body {
     margin: 0 auto;
 }
 
+a, a:link, a:visited {
+    color: #B10333;
+}
+
+a:hover {
+    color: #E50040;
+}
+
 /* Cabeçalho */
 #header {
     height: 180px;
@@ -17,6 +25,7 @@ body {
 }
 
 #header-logo {
+    display: inline-block;
     margin-top: 30px;
 }
 
@@ -27,8 +36,6 @@ body {
 
 #header-navbar ul li {
     margin-top: 10px;
-    font-size: 0.9em;
-    padding: 13px 21px;
     display: inline-block;
     background: #B10333;
 }
@@ -42,8 +49,19 @@ body {
 
 #header-navbar ul li a {
     color: white;
+    display: block;
+    padding: 13px 19px;
     text-decoration: none;
+    transition: 0.5s;
 }
+
+#header-navbar ul li a:hover {
+    transition: 0.5s;
+    padding: 13px 24px;
+    color: black;
+    background-color: #DE003E;
+}
+
 
 #header-navbar .selected-page {
     background-color: #DE003E;
@@ -51,8 +69,25 @@ body {
 
 /* Área de notícias */
 #main {
-    display: inline-block;
     margin-top: 60px;
+    width: 100%;
+}
+
+#main>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main>div:not(:first-child) {
+    margin-left: 10px;
+}
+
+.news h5 {
+    padding: 2px;
+    display: inline;
+    color: white;
+    background: #B10333;
+    text-transform: uppercase;
 }
 
 .main-box {
@@ -61,7 +96,7 @@ body {
     background: url('../img/fundo-caixa.png');
 }
 
-.main-box h3 {
+.main-box h4 {
     margin: 0;
     padding: 5px;
     color: white;
@@ -75,9 +110,8 @@ body {
 }
 
 /* Barra lateral esquerda */
-#left-sidebar {
+#sidebar {
     width: 170px;
-    font-size: 0.9em;
 }
 
 .interviews ul {
@@ -87,12 +121,16 @@ body {
 }
 
 .interviews li {
-    padding: 8px 5px;
+    font-size: 0.9em;
+}
+
+.interviews li:not(:last-child) {
     border-bottom: 0.5px solid #E8E8E8;
 }
 
 .interviews a, .interviews a:link, .interviews a:visited {
     display: block;
+    padding: 10px 5px;
     text-decoration: none;
     color: black;
 }
@@ -115,4 +153,63 @@ body {
     color: white;
     background: #B10333;
     border: 2px solid #780021;
+}
+
+/* Colunas */
+.column {
+    width: 265px;
+}
+
+.column p {
+    margin: 0;
+}
+
+.news img {
+    box-sizing: content-box;
+    width: 98%;
+    border: 3px solid #E8E8E8;
+}
+
+/* Blocos de notícias */
+.news-block {
+    font-size: 0.7em;
+}
+
+.news-block ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+}
+
+.news-block a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+    height: 55px;
+    border-bottom: 1px solid #A9A9A9;
+}
+
+.news-block a:hover {
+    background: #E8E8E8;
+}
+
+.news-block img {
+    float: left;
+    width: 35%;
+    margin-right: 5px;
+}
+
+.news-block h5 {
+    vertical-align: top;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #3E7AB9;
+}
+
+.news-block p {
+    margin: 0;
+    display: inline;
+    clear: both;
 }
