@@ -56,7 +56,6 @@ a:hover {
 }
 
 #header-navbar ul li a:hover {
-    transition: 0.5s;
     padding: 13px 24px;
     color: black;
     background-color: #DE003E;
@@ -133,6 +132,7 @@ a:hover {
     padding: 10px 5px;
     text-decoration: none;
     color: black;
+    transition: padding 0.2s ease-out, color 0.4s;
 }
 
 .interviews a:hover {
@@ -153,18 +153,24 @@ a:hover {
     color: white;
     background: #B10333;
     border: 2px solid #780021;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+#receive-news #news-submit:hover {
+    background: #DE003E;
 }
 
 /* Colunas */
-.column {
+.news-column {
     width: 265px;
 }
 
-.column p {
+.news-column p {
     margin: 0;
 }
 
-.news img {
+.news-column img {
     box-sizing: content-box;
     width: 98%;
     border: 3px solid #E8E8E8;
@@ -204,7 +210,7 @@ a:hover {
     vertical-align: top;
     display: inline;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     color: #3E7AB9;
 }
 
